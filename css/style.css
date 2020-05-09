@@ -1,0 +1,148 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body {
+    width: 640px;
+
+    margin: 0 auto;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+
+    background: #fff;
+
+}
+body > div {
+    border: 1px solid #e8e8e8;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    
+    padding-left: 20px;
+    padding-right: 40px;
+}
+h1 {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    
+    font-size: 35px;
+    font-weight: 700;
+    color: black;
+}
+h3 {
+    color: #5d5d5d;
+    font-size: 15px;
+    font-weight: 700;
+
+}
+p {
+    color: #5d5d5d;
+}
+a {
+    color: #007AFF;
+}
+img {
+    margin-left: 50%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+    transform: translate(-50%);
+}
+
+label {
+    position: relative;
+    background: #F5F5F5;
+}
+
+div div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    /* скрыть контент по умолчанию */
+    display: none;
+    position: relative;
+}
+div div::after {
+    /* синяя полоска открывающегося блока */
+    content: "";
+    display: block;
+
+    position: absolute;
+    top: 0;
+    left: -33px;
+
+    height: 100%;
+    width: 2px;
+    background-color: #0179FF;
+}
+
+
+label::before {
+    /* стрелочка перед названием главы */
+    content: "";
+    display: block;
+
+    position: absolute;
+    top: 19px;
+    left: 19px;
+
+    border: solid rgba(0, 0, 0, 0.65);
+    border-width: 0 1px 1px 0;
+    padding: 3px;
+
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+input[type="checkbox"]:checked+label::before {
+    /* поворот стрелочки */
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    top: 17px;
+}
+
+label::after {
+    /* синяя полоска перед названием главы */
+    content: "";
+    display: block;
+
+    position: absolute;
+    top: 10px;
+    left: -13px;
+
+    height: 50%;
+    width: 2px;
+    background-color: #0179FF;
+}
+input[type="checkbox"]:checked+label::after {
+    /* сливание с полоской открывшегося контейнера */
+    height: 80%;
+}
+
+input, label {
+    /* стайлинг оглавления */
+    width: 640px;
+    margin-left: -20px;
+    text-align: left;
+
+    padding-left: 35px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    display: block;
+    user-select: none;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    /* скрыть круглый чекбокс */
+    display: none;
+}
+
+input:nth-of-type(1):checked~div:nth-of-type(1),
+input:nth-of-type(2):checked~div:nth-of-type(2),
+input:nth-of-type(3):checked~div:nth-of-type(3) {
+    /* отображение открытой главы после статуса checked */
+    display: block;
+}
