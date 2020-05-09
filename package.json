@@ -1,0 +1,23 @@
+{
+  "name": "beeintern",
+  "version": "1.0.0",
+  "description": "Lecture 14 homework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shameondev/beeintern.git"
+  },
+  "keywords": [
+    "Lecture#14",
+    "homework"
+  ],
+  "author": "Daniil Fadeev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shameondev/beeintern/issues"
+  },
+  "homepage": "https://github.com/shameondev/beeintern#readme"
+}
