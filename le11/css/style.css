@@ -22,24 +22,23 @@
 
 .header__upper {
     width: 100%;
-    max-width: 1443px;
     height: 100px;
-    left: 0;
-    top: 0;
-    position: absolute;
+
+    padding: 0 80px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .header__bottom{
-    position: absolute;
-    width: 1443px;
+    width: 100%;
     height: 45px;
-    left: 0px;
-    top: 100px;
     background: #F4F4F4;
 }
 .wrapper{
     margin-left: 83px;
     height: 100%;
-    width: 899px;
+    max-width: 899px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,18 +55,8 @@
 /* LOGO */
 
 .logo_all{
-position: absolute;
-width: 168.1px;
-height: 22.69px;
-left: 80.6px;
-top: 39.94px;
-}
-.logo_o{
-position: absolute;
-width: 20.98px;
-height: 22.73px;
-left: 129.99px;
-top: 39.9px;
+    width: 169px;
+    height: 100%;
 }
 
 /* SEARCH */
@@ -75,57 +64,70 @@ top: 39.9px;
 input, button:focus{
     outline: none;
 }
+.search {
+    height: 40px;
+    display: flex;
+}
 .search_field{
-position: absolute;
-width: 400px;
-height: 40px;
-left: 378px;
-top: 33px;
+height: 100%;
 background: #FFFFFF;
 border: 1px solid #E0E0E0;
 border-radius: 3px;
 font-weight: 600;
 font-size: 14px;
 color: #757575;
-padding: 11px 0px 12px 14px;
+padding: 11px 155px 12px 14px;
+margin-right: -10px;
 }
 .search_button{
-position: absolute;
-width: 75px;
-height: 40px;
-left: 703px;
-top: 33px;
+height: 100%;
 background: #007AFF;
 color: #FFFFFF;
 font-weight: 700;
 font-size: 14px;
 border: none;
 border-radius: 3px;
+padding: 12px 20px;
 }
 
 /* MENU */
 
 .menu{
-position: absolute;
-width: 336px;
-height: 40px;
-left: 1022px;
-top: 33px;
 display: flex;
 justify-content: space-around;
 align-items: center;
 }
+.menu__links {
+    margin-right: 27px;
+}
+.menu__links:last-child {
+    margin-right: 0;
+}
 .menu_btn{
-width: 100px;
-height: 40px;
-border: 1px solid #757575;
-border-radius: 3px;
-font-size: 14px;
-font-weight: 600;
-color: #757575;
+    padding: 12px 25px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+
+    cursor: pointer;
+}
+.white {
+    border: 1px solid #757575;
+    
+    font-size: 14px;
+    font-weight: 600;
+    color: #757575;
+}
+.blue {
+    background: #007AFF;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 14px;
 }
 
+
 /* TITLE */
+
 
 .page_title{
     text-align: center;
@@ -263,16 +265,6 @@ span{
     font-size: 14px;
     font-weight: 400;
     color: #757575;
-}
-.search_btn{
-    background: #007AFF;
-    height: 40px;
-    color: #FFFFFF;
-    font-weight: 700;
-    font-size: 14px;
-    border: none;
-    border-radius: 3px;
-    width: 160px;
 }
 .menu_bottom{
     display: flex;

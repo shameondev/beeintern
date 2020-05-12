@@ -9,107 +9,124 @@
 </head>
 <body>
     <div class="header__upper">
-        <img class="logo_all" src="./img/shopper_logo.svg" alt="shopper_logo">
-        <img class="logo_o" src="./img/logo_o.svg" alt="shopper_logo">
+        <div class="header__logo">
+            <img class="logo_all" src="./img/logo.svg" alt="shopper_logo">
+        </div>
         <div class="search">
-            <input class="search_field" type="text" placeholder="Search For Products" name="search">
-            <button class="search_button" type="submit">Search</button>
+            <form action="#" class="search__form">
+                <input class="search_field" type="text" placeholder="Search For Products" name="search">
+                <button class="menu_btn blue" type="submit">Search</button>
+            </form>
         </div>
         <div class="menu">
-            <button class="menu_btn" type="submit">Log in</button>
-            <button class="menu_btn" type="submit">Sign up</button>
-            <img src="./img/menu_heart.svg" width="28" alt="сердечко">
-            <img src="./img/menu_cart.svg" width="32" alt="сердечко">
+            <div class="menu__links">
+                <button class="menu_btn white">Log in</button>
+            </div>
+            <div class="menu__links"> 
+                <button class="menu_btn white">Sign up</button>
+            </div>
+            <div class="menu__links">
+                <a href="#" class="header__link">
+                    <img src="./img/menu_heart.svg" width="28" alt="сердечко">
+                </a>
+            </div>
+            <div class="menu__links">
+                <a href="#" class="header__link">
+                    <img src="./img/menu_cart.svg" width="32" alt="корзина">
+                </a>
+            </div>
         </div>
     </div>
     <div class="header__bottom">
         <div class="wrapper">
-            <a href="#"">Home Decor</a>
-            <a href="#"">Furniture</a>
-            <a href="#"">Lightning</a>
-            <a href="#"">Home Accents</a>
-            <a href="#"">Rugs</a>
-            <a href="#"">Outdoors</a>
-            <a href="#"">Holidays</a>
-            <a href="#"">Gifts</a>
-            <a href="#"">Events</a>
+            <a href="#">Home Decor</a>
+            <a href="#">Furniture</a>
+            <a href="#">Lightning</a>
+            <a href="#">Home Accents</a>
+            <a href="#">Rugs</a>
+            <a href="#">Outdoors</a>
+            <a href="#">Holidays</a>
+            <a href="#">Gifts</a>
+            <a href="#">Events</a>
         </div>
     </div>
     <div class="container">
-        <div class="page_title">
-            <h1>Seller Application</h1>
-        </div>
-        <div class="supform">
-            <a href="#">Application Critaria</a>
-            <a href="#">Company Profile</a>
-            <a href="#">Web & Social Media</a>
-            <a class="active" href="#">Contact Info</a>
-            <a href="#">Confirm Account</a>
-        </div>
-        <div class="form">
-            <div class="form_name">
-                <p class="form_title">Name</p>
-                <div class="form_name_box">
-                    <input class="text_field except" type="text" placeholder="Mr.">
-                    <input class="text_field" type="text" placeholder="First Name">
-                    <input class="text_field" type="text" placeholder="Middle Name">
-                    <input class="text_field" type="text" placeholder="Last Name">
+        <form action="#" class="page__form">
+            <div class="page_title">
+                <h1>Seller Application</h1>
+            </div>
+            <div class="supform">
+                <a href="#">Application Critaria</a>
+                <a href="#">Company Profile</a>
+                <a href="#">Web & Social Media</a>
+                <a class="active" href="#">Contact Info</a>
+                <a href="#">Confirm Account</a>
+            </div>
+            <div class="form">
+                <div class="form_name">
+                    <p class="form_title">Name</p>
+                    <div class="form_name_box">
+                        <input class="text_field except" type="text" placeholder="Mr.">
+                        <input class="text_field" type="text" placeholder="First Name">
+                        <input class="text_field" type="text" placeholder="Middle Name">
+                        <input class="text_field" type="text" placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="form_title1">
+                    <p class="form_title">Title</p>
+                    <div class="form_name_box">
+                        <input class="text_field full" type="text" placeholder="eg. CEO, Owner, Manager, Designer, Merchandiser">
+                    </div>
+                </div>
+                <p class="form_header">Business Mailing Address</p>
+                <div class="form_flex">
+                    <div class="form_flex1">
+                        <p class="form_title">Street Address</p>
+                        <div class="form_name_box">
+                            <input class="text_field trio" type="text">
+                        </div>
+                    </div>
+                    <div class="form_flex1">
+                        <p class="form_title">Apt / Suite / Other</p>
+                        <div class="form_name_box">
+                            <input class="text_field trio" type="text">
+                        </div>
+                    </div>
+                    <div class="form_flex1">
+                        <p class="form_title">City</p>
+                        <div class="form_name_box">
+                            <input class="text_field trio" type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class="form_flex last">
+                    <div class="form_flex1">
+                        <p class="form_title">Zip / Postal Code</p>
+                        <div class="form_name_box">
+                            <input class="text_field trio" type="text">
+                        </div>
+                    </div>
+                    <div class="form_flex1">
+                        <p class="form_title">Country</p>
+                        <div class="form_name_box">
+                            <input class="text_field trio" type="text" placeholder="Select Country">
+                        </div>
+                    </div>
+                    <div class="form_flex1">
+                        <p class="form_title">Phone Number</p>
+                        <div class="form_name_box">
+                            <input class="text_field trio" type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class="form_bottom_text">To Validate your account please enter valid mobile Number to receive confirmation code</div>
+                <div class="form_footer">
+                    <button class="menu_btn white">Go Back</button>
+                    <span>By Submitting this application, you agree to the <a class="underlined" href="#">Buyer guidelines</a></span>
+                    <button class="menu_btn blue">Submit Application</button>
                 </div>
             </div>
-            <div class="form_title1">
-                <p class="form_title">Title</p>
-                <div class="form_name_box">
-                    <input class="text_field full" type="text" placeholder="eg. CEO, Owner, Manager, Designer, Merchandiser">
-                </div>
-            </div>
-            <p class="form_header">Business Mailing Address</p>
-            <div class="form_flex">
-                <div class="form_flex1">
-                    <p class="form_title">Street Address</p>
-                    <div class="form_name_box">
-                        <input class="text_field trio" type="text">
-                    </div>
-                </div>
-                <div class="form_flex1">
-                    <p class="form_title">Apt / Suite / Other</p>
-                    <div class="form_name_box">
-                        <input class="text_field trio" type="text">
-                    </div>
-                </div>
-                <div class="form_flex1">
-                    <p class="form_title">City</p>
-                    <div class="form_name_box">
-                        <input class="text_field trio" type="text">
-                    </div>
-                </div>
-            </div>
-            <div class="form_flex last">
-                <div class="form_flex1">
-                    <p class="form_title">Zip / Postal Code</p>
-                    <div class="form_name_box">
-                        <input class="text_field trio" type="text">
-                    </div>
-                </div>
-                <div class="form_flex1">
-                    <p class="form_title">Country</p>
-                    <div class="form_name_box">
-                        <input class="text_field trio" type="text" placeholder="Select Country">
-                    </div>
-                </div>
-                <div class="form_flex1">
-                    <p class="form_title">Phone Number</p>
-                    <div class="form_name_box">
-                        <input class="text_field trio" type="text">
-                    </div>
-                </div>
-            </div>
-            <div class="form_bottom_text">To Validate your account please enter valid mobile Number to receive confirmation code</div>
-            <div class="form_footer">
-                <button class="menu_btn">Go Back</button>
-                <span>By Submitting this application, you agree to the <a class="underlined" href="#">Buyer guidelines</a></span>
-                <button class="search_btn">Submit Application</button>
-            </div>
-        </div>
+        </form>        
         <div class="menu_bottom">
             <div class="menu_part">
                 <div class="menu_title">How We Help</div>
