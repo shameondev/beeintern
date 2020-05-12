@@ -4,7 +4,7 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: white;
-    width: 1140px;
+    width: 100%;
 }
 .advantage-header{
     height: 227px;
@@ -22,8 +22,6 @@
     position: absolute;
     top: 90px;
     right: 0;
-    /* max-width: 240px;
-    height: auto; */
 }
 .advantage-header_parttext{
     position: absolute;

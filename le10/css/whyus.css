@@ -3,11 +3,12 @@
     height: 1028px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    width: 1140px;
+    width: 100%;
 }
 .whyus-header{
     height: 202px;
     position: relative;
+    margin: 0 auto;
 }
 .feature_1{
     width: 912px;

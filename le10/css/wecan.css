@@ -1,6 +1,6 @@
 .wecan{
-    height: 600px;
-    width: 1140px;
+    height: 500px;
+    width: 100%;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: white;
@@ -21,8 +21,6 @@
     position: absolute;
     top: 90px;
     right: 0;
-    /* max-width: 240px;
-    height: auto; */
 }
 .wecan-header_parttext{
     position: absolute;
@@ -98,10 +96,12 @@
 .footer{
     background-color: #fff;
     height: 80px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
     width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding-right: 150px;
 }
 .footer-text{
     text-align: center;
@@ -115,13 +115,11 @@
     color: #e7bd00;
 }
 .footer-logo{
-    position: absolute;
     right: 70px;
     top: 18px;
     display: inline-block;
 }
 .author{
-    position: absolute;
     bottom: 6px;
     right: 130px;
     color: #000000;
@@ -130,4 +128,7 @@
 }
 .author span{
     color: #FEB86B;
+}
+.developedby {
+    display: flex;
 }
