@@ -1,0 +1,472 @@
+
+/* GENERAL */
+
+*
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+
+/* NAVIGATION */
+
+.nav {
+    position: fixed;
+    width: 100%;
+    
+    padding: 15px 95px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    background-color: rgba(0, 0, 0, 0.47);
+    z-index: 1;
+}
+
+.nav-link {
+    margin-right: 113px;
+
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1.90909px;
+    color: #ffffff;
+}
+.nav-link:last-child {
+    margin-right: 0;
+}
+
+.nav-image {
+    margin-right: 47px;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+}
+.nav-image img{
+    width: 100%;
+    height: auto;
+}
+.nav-image:last-child {
+    margin-right: 0;
+}
+.nav-logo {
+    height: 100%;
+}
+
+
+/* WIRELESS */
+
+
+.wireless {
+    background: #2B2835;
+}
+.wrapper {
+    position: relative;
+
+    max-width: 1240px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.bitmap-picture {
+    position: absolute;
+    top: 0;
+    left: -110px;
+}
+.text-wrapper {
+    padding: 210px 0 180px;
+    max-width: 508px;
+    width: 100%;
+}
+.suptext {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 13px;
+
+    letter-spacing: 1px;
+
+    color: #FFFFFF;
+}
+.text-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 43px;
+    margin-bottom: 44px;
+}
+.pricenbuy {
+    display: flex;
+    margin-bottom: 10px;
+}
+.price {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 49px;
+    color: #f2f2f2;
+    margin-right: 34px;
+}
+.button {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    border: none;
+    outline: none;
+
+    color: #000000;
+    background: #FFC700;
+    border-radius: 100px;   
+    padding: 12px 48px;
+    cursor: pointer;
+}
+.subtext {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 20px;
+
+    color: #FFC700;
+}
+
+/* CHOOSE CIRCLES */
+
+/* Customize the label (the container) */
+.color__btn {
+    outline: none;
+    position: relative;
+
+    width: 24px;
+    height: 24px;
+
+    border-radius: 50%;
+
+    margin-right: 10px;
+
+    cursor: pointer;
+
+    border: 1px solid #EAEAEA;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.135817);
+  }
+  .color__btn::before {
+      content: "";
+      display: none;
+
+      position: absolute;
+      top: -2px;
+      left: -2px;
+
+      width: 27px;
+      height: 27px;
+
+      border-radius: 50%;
+      border: 1px solid rgba(0, 0, 0, 0.7);
+  }
+  .color__btn:hover::before {
+      display: block;
+  }
+  .color__btn:last-child {
+      margin-right: 0;
+  }
+  .color__btn.second {
+      background-color: #DC5656;
+  }
+  .color__btn.third {
+      background-color: #000000;
+  } 
+  .chosecolor {
+    display: flex;
+}
+
+
+/* BEATMAP CIRCLES */
+
+.pill-image {
+    position: relative;
+}
+
+.btn-wrapper {
+    display: flex;
+    
+    position: absolute;
+
+    left: 347px;
+    top: 605px;
+
+    height: auto;
+    width: auto;
+}
+
+.pill__button:hover {
+    background-color: black;
+}
+.pill__button {
+    transition: background-color 0.2s linear;
+    border: none;
+    outline: none;
+
+    width: 10px;
+    height: 10px;
+
+    padding: 6px 6px;
+    margin-right: 15px;
+
+    border-radius: 50%;
+
+    background: #d1d1d1;
+
+    /* margin-right: 15px; */
+}
+.pill__button:last-child {
+    margin-right: 0;
+}
+
+
+/* BEATS PILL */
+
+
+.pill-wrapper {
+    position: relative;
+
+    max-width: 1240px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pilltext-wrapper {
+    color: #2B2835;
+    margin-right: 67px;
+}
+.pill-sup {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 7px;
+}
+.pill-title {
+    font-size: 50px;
+    font-weight: 700;
+    
+    margin-bottom: 20px;
+
+    position: relative;
+}
+.plus {
+    position: absolute;
+
+    left: 214px;
+    top: -18px;
+}
+.availiable {
+    font-size: 40px;
+    font-weight: 300;
+    padding-bottom: 11px;
+}
+.colors {
+    margin-bottom: 50px;
+}
+.colors p {
+    margin: 0;
+}
+.findcolor {
+    font-size: 16px;
+    font-weight: 300;
+
+    padding-bottom: 15px;
+}
+.pill-price {
+    font-size: 40px;
+    color: black;
+    font-weight: 300;
+    margin-right: 43px;
+}
+.pill-pricenbuy {
+    display: flex;
+
+    margin-bottom: 15px;
+}
+.pill-button {
+    border: none;
+    outline: none;
+    border-radius: 100px;
+
+    background-color: #000000;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+    
+    padding: 12px 48px;
+}
+.pill-subtext {
+    font-size: 13px;
+    line-height: 20px;
+
+    color: #000000;
+
+    mix-blend-mode: normal;
+    opacity: 0.52;
+}
+/* BEATS X */
+
+.x-wrapper {
+    position: relative;
+
+    max-width: 1240px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.product {
+    position: relative;
+    width: 393px;
+    height: 560px;
+
+    margin-right: 37px;
+
+    background: #F8F8F9;
+}
+.product:last-child {
+    margin-right: 0;
+}
+
+.x-photo {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    padding-right: 40px;
+    padding-top: 40px;
+}
+
+.xtext-wrapper {
+    position: absolute;
+
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 45px;
+    bottom: 0;
+}
+.x-title {
+    font-size: 50px;
+    font-weight: 400;
+    color: #2b2835;
+
+    margin-bottom: 10px;
+}
+.letterx {
+    font-size: 35px;
+    font-weight: 400;
+    
+    position: absolute;
+    top: -5px;
+}
+.x-text {
+    font-size: 14px;
+    font-weight: 300;
+    color: #030303;
+
+    margin-bottom: 10px;
+}
+.x-pricenbuy {
+    display: flex;
+    align-items: center;
+}
+.x-price {
+    font-size: 25px;
+    font-weight: 400;
+    color: #9D8220;
+    margin-right: 20px;
+}
+.x-buy {
+    border: none;
+    border-radius: 100px;
+    outline: none;
+    background-color: black;
+    color: white;
+
+    padding: 12px 35px;
+}
+
+/* FOOTER */
+
+.footer {
+    background: #2B2835;
+}
+.foot-wrapper {
+    max-width: 1440px;
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 55px 190px 55px 135px;
+    
+}
+.foot-logo {
+    align-self: flex-start;
+}
+.foot-title {
+    color: #fff;
+    
+    font-size: 25px;
+    font-weight: 500;
+}
+.foot-text {
+    color: #b8b8b8;
+
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.foot-menu {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+.foot-menu-part {
+    margin-right: 85px;
+}
+.foot-menu-part:last-child {
+    margin-right: 0;
+}
+.foot-menu-part a {
+    display: block;
+
+    margin-bottom: 10px;
+}
+.foot-contacts {
+    align-self: flex-start;
+}
+.followus {
+    margin-bottom: 20px;
+}
+.social {
+    width: 165px;
+    height: auto;
+}
+.copyright {
+    text-align: center;
+    font-size: 12px;
+    padding-bottom: 20px;
+
+    color: rgba(255, 255, 255, 0.31);
+}

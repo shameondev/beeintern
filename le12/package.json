@@ -1,0 +1,11 @@
+{
+  "name": "le12",
+  "version": "1.0.0",
+  "description": "lecture#12",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniil Fadeev",
+  "license": "ISC"
+}
