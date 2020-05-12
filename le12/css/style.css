@@ -1,7 +1,9 @@
 
 /* GENERAL */
 
-* {
+*
+*::after,
+*::before {
     box-sizing: border-box;
 }
 
@@ -20,12 +22,14 @@ a {
 
 .nav {
     position: fixed;
-    max-width: 1440px;
-    padding: 15px 95px;
     width: 100%;
+    
+    padding: 15px 95px;
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
     background-color: rgba(0, 0, 0, 0.47);
     z-index: 1;
 }
@@ -58,16 +62,12 @@ a {
     margin-right: 0;
 }
 .nav-logo {
-    width: 50px;
-    height: 50px;
-    display: inline-block;
-}
-.nav-logo img {
-    width: 100%;
-    height: auto;
+    height: 100%;
 }
 
+
 /* WIRELESS */
+
 
 .wireless {
     background: #2B2835;
@@ -145,66 +145,49 @@ a {
 /* CHOOSE CIRCLES */
 
 /* Customize the label (the container) */
-.container {
-    display: block;
+.color__btn {
+    outline: none;
     position: relative;
-    padding-left: 35px;
-    cursor: pointer;
-    font-size: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  
-  /* Hide the browser's default radio button */
-  .container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-  }
-  
-  /* Create a custom radio button */
-  .checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #fff;
+
+    width: 24px;
+    height: 24px;
+
     border-radius: 50%;
-    box-shadow: 0 2px 2px #8888886d;
+
+    margin-right: 10px;
+
+    cursor: pointer;
+
+    border: 1px solid #EAEAEA;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.135817);
   }
-  .checkmark.second {
+  .color__btn::before {
+      content: "";
+      display: none;
+
+      position: absolute;
+      top: -2px;
+      left: -2px;
+
+      width: 27px;
+      height: 27px;
+
+      border-radius: 50%;
+      border: 1px solid rgba(0, 0, 0, 0.7);
+  }
+  .color__btn:hover::before {
+      display: block;
+  }
+  .color__btn:last-child {
+      margin-right: 0;
+  }
+  .color__btn.second {
       background-color: #DC5656;
   }
-  .checkmark.third {
+  .color__btn.third {
       background-color: #000000;
   } 
-  
-  /* Create the indicator (the dot/circle - hidden when not checked) */
-  .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-  }
-  
-  /* Show the indicator (dot/circle) when checked */
-  .container input:checked ~ .checkmark:after {
-    display: block;
-  }
-  
-  /* Style the indicator (dot/circle) */
-  .container .checkmark:after {
-    left: -3px;
-    top: -3px;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.55);
-  }
   .chosecolor {
     display: flex;
 }
@@ -212,55 +195,44 @@ a {
 
 /* BEATMAP CIRCLES */
 
-/* Customize the label (the container) */
-.btn-container {
-    display: block;
+.pill-image {
     position: relative;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  
-  /* Hide the browser's default radio button */
-  .btn-container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-  }
-  
-  /* Create a custom radio button */
-  .btn-checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 10px;
-    width: 10px;
-    background-color: #d1d1d1;
-    border-radius: 50%;
-  }
+}
 
-  /* On mouse-over, add a black background color */
-.btn-container:hover input ~ .btn-checkmark {
-    background-color: #000;
-  }
-  
-  /* When the checkbox is checked, add a black background */
-  /* .btn-container input:checked ~ .btn-checkmark {
-    background-color: #000;
-  } */
-
-  .btn-wrapper {
+.btn-wrapper {
     display: flex;
-    justify-content: space-between;
+    
     position: absolute;
+
     left: 347px;
-    top: 615px;
-    width: 50px;
+    top: 605px;
+
+    height: auto;
+    width: auto;
+}
+
+.pill__button:hover {
+    background-color: black;
+}
+.pill__button {
+    transition: background-color 0.2s linear;
+    border: none;
+    outline: none;
+
+    width: 10px;
     height: 10px;
+
+    padding: 6px 6px;
+    margin-right: 15px;
+
+    border-radius: 50%;
+
+    background: #d1d1d1;
+
+    /* margin-right: 15px; */
+}
+.pill__button:last-child {
+    margin-right: 0;
 }
 
 
@@ -306,7 +278,7 @@ a {
     padding-bottom: 11px;
 }
 .colors {
-    margin-bottom: 90px;
+    margin-bottom: 50px;
 }
 .colors p {
     margin: 0;
@@ -349,16 +321,6 @@ a {
     mix-blend-mode: normal;
     opacity: 0.52;
 }
-.pill-image {
-    height: 755px;
-    width: 755px;
-    position: relative;
-}
-.pill-image img {
-    width: 100%;
-    height: auto;
-}
-
 /* BEATS X */
 
 .x-wrapper {
@@ -370,7 +332,7 @@ a {
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 .product {
     position: relative;
@@ -381,21 +343,19 @@ a {
 
     background: #F8F8F9;
 }
+.product:last-child {
+    margin-right: 0;
+}
+
 .x-photo {
     position: absolute;
+    right: 0;
+    top: 0;
+
+    padding-right: 40px;
+    padding-top: 40px;
 }
-.x-photo.one {
-    right: 62px;
-    top: 40px;
-}
-.x-photo.two {
-    top: -10px;
-    right: 40px;
-}
-.x-photo.three {
-    bottom: 40px;
-    right: 30px;
-}
+
 .xtext-wrapper {
     position: absolute;
 
