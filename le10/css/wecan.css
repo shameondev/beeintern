@@ -1,0 +1,134 @@
+.wecan{
+    height: 500px;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: white;
+    position: relative;
+}
+.wecan-header{
+    position: relative;
+    height: 190px;
+}
+.wecan-header_part1{
+    position: absolute;
+    margin-right: -4px;
+    width: 367px;
+    display: inline-block;
+    height: 100%;
+}
+.wecan-header_part1 img{
+    position: absolute;
+    top: 90px;
+    right: 0;
+}
+.wecan-header_parttext{
+    position: absolute;
+    margin-right: -4px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    width: 401px;
+    display: inline-block;
+    height: 100%;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 36px;
+    text-align: center;
+    color: #009C17;
+}
+.wecan-header_parttext span{
+    font-size: 25px;
+}
+.wecan-header_parttext p{
+    padding-top: 85px;
+    line-height: 0.95;
+    margin: 0;
+}
+.wecan-header_part2{
+    position: absolute;
+    margin-right: -4px;
+    left: 768px;
+    width: 300px;
+    display: inline-block;
+    height: 100%;
+}
+.wecan-header_part2 img{
+    position: absolute;
+    top: 90px;
+    left: 1px;
+    right: 0;
+}
+.wecan-features{
+    height: 192px;
+    background-color: #fff;
+    text-align: center;
+}
+.wecanft{
+    width: 64px;
+    height: 100%;
+    background-color: #f1f1f1;
+    display: inline-block;
+    margin: 0 90px;
+    position: relative;
+}
+.wecanft img{
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.line-1{
+    position: absolute;
+    width: 32px;
+    height: 96px;
+    border-top: 1px solid rgba(122, 122, 122, 0.6);
+    bottom: 0;
+    left: 16px;
+}
+.wecanft p{
+    position: absolute;
+    color: #4d4d4d;
+    left: 50%;
+    transform: translate(-50%);
+    top: 110px;
+}
+.footer{
+    background-color: #fff;
+    height: 80px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding-right: 150px;
+}
+.footer-text{
+    text-align: center;
+    color: #009C17;
+    font-size: 12px;
+}
+.superstyle{
+    color: #979797;
+}
+.footer-text a{
+    color: #e7bd00;
+}
+.footer-logo{
+    right: 70px;
+    top: 18px;
+    display: inline-block;
+}
+.author{
+    bottom: 6px;
+    right: 130px;
+    color: #000000;
+    font-size: 14px;
+    line-height: 1.3;
+}
+.author span{
+    color: #FEB86B;
+}
+.developedby {
+    display: flex;
+}

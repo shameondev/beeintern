@@ -1,0 +1,204 @@
+.whyus{
+    background-image: url(../img/why.jpg);
+    height: 1028px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    width: 100%;
+}
+.whyus-header{
+    height: 202px;
+    position: relative;
+    margin: 0 auto;
+}
+.feature_1{
+    width: 912px;
+    height: 139px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-image: url(../img/why-1.png);
+    position: relative;
+}
+.feature_2{
+    width: 912px;
+    height: 139px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-image: url(../img/why-2.png);
+    position: relative;
+}
+.feature_3{
+    width: 912px;
+    height: 139px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-image: url(../img/why-3.png);
+    position: relative;
+}
+.feature_4{
+    width: 912px;
+    height: 139px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    position: relative;
+    background-image: url(../img/why-4.png);
+}
+.header_part1{
+    position: relative;
+    margin-right: -4px;
+    width: 440px;
+    display: inline-block;
+    height: 100%;
+}
+.header_part1 img{
+    position: absolute;
+    top: 90px;
+    right: 0;
+}
+.header_parttext{
+    position: absolute;
+    margin-right: -4px;
+    width: 300px;
+    display: inline-block;
+    height: 100%;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 36px;
+    text-align: center;
+    color: white;
+}
+.header_parttext p{
+    line-height: 202px;
+    margin: 0;
+}
+.header_part2{
+    position: absolute;
+    margin-right: -4px;
+    left: 734px;
+    width: 300px;
+    display: inline-block;
+    height: 100%;
+}
+.header_part2 img{
+    position: absolute;
+    top: 90px;
+    left: 1px;
+    right: 0;
+}
+.ft1textbox1{
+    height: 118px;
+    width: 510px;
+}
+.ft1textbox1 p{
+    font-size: 35px;
+    margin: 0;
+    line-height: 118px;
+    text-align: center;
+    color: white;
+}
+.ft1textbox1 span{
+    font-size: 50px;
+}
+.ft1textbox2{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 118px;
+    width: 510px;
+}
+.ft1textbox2 p{
+    font-size: 20px;
+    margin: 0;
+    line-height: 1.3;
+    text-align: left;
+    color: #009C17;
+    text-transform: uppercase;
+    padding-left: 90px;
+    padding-top: 40px;
+
+}
+.ft2textbox1{
+    height: 118px;
+    width: 510px;
+}
+.ft2textbox1 p{
+    font-size: 40px;
+    margin: 0;
+    line-height: 118px;
+    text-align: center;
+    color: white;
+}
+.ft2textbox1 span{
+    font-size: 55px;
+}
+.ft2textbox2{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 118px;
+    width: 510px;
+}
+.ft2textbox2 p{
+    font-size: 20px;
+    margin: 0px;
+    padding-right: 20px;
+    line-height: 118px;
+    text-align: center;
+    color: #009C17;
+    text-transform: uppercase;
+}
+.ft3textbox1{
+    height: 118px;
+    width: 510px;
+}
+.ft3textbox1 p{
+    font-size: 26px;
+    margin: 0;
+    line-height: 118px;
+    text-align: center;
+    color: white;
+}
+.ft3textbox2{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 118px;
+    width: 510px;
+}
+.ft3textbox2 p{
+    font-size: 20px;
+    margin: 0;
+    line-height: 1.3;
+    text-align: left;
+    color: #009C17;
+    text-transform: uppercase;
+    padding-left: 90px;
+    padding-top: 40px;
+}
+.ft4textbox1{
+    height: 118px;
+    width: 510px;
+}
+.ft4textbox1 p{
+    font-size: 26px;
+    margin: 0;
+    line-height: 118px;
+    text-align: center;
+    color: white;
+}
+.ft4textbox2{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 118px;
+    width: 510px;
+}
+.ft4textbox2 p{
+    font-size: 20px;
+    margin: 0px;
+    padding-right: 20px;
+    line-height: 118px;
+    text-align: center;
+    color: #009C17;
+    text-transform: uppercase;
+}
